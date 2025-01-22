@@ -1,0 +1,33 @@
+atajos
+ctrl c      #detener ejecucion en la consola
+ctrl k c    #comentar
+ctrl k u    #descomentar
+alt shift f    #autoformatear
+ctrl ?   tabular izquierda varias lineas
+ctrl ¿   tabular derecha varias lineas
+
+caracteres de escape:
+\t tabulacion, \n salto de linea, 
+\r cursor al comienzo de linea actual
+\b backspace
+
+## comentario
+""" comentario multilinea """
+
+    vela=['a','b','c']  #diccionario a lista
+    i=0
+    for keys in candles:
+        vela[i]='manzana'
+        print(vela[i])
+        i=i+1
+
+
+print(candles)
+time.sleep(60) #pausa en seg
+
+longitud=len(candles)
+keys=candles.keys()
+print(keys)
+
+#print(values)
+#print(values["open"])

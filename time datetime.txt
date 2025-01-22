@@ -1,0 +1,24 @@
+import time
+
+# tiempo=time.localtime() #sin formato
+# print(tiempo)
+# print(tiempo.tm_hour)
+
+# fechahora=time.asctime(time.localtime(time.time()))
+# print(fechahora)
+
+empiezo=time.time()
+input("ingrese texto: ")
+termino=time.time()
+print(termino-empiezo)
+
+
+
+import time
+import datetime
+
+hora=time.localtime().tm_hour    #hora de 0 a 23
+diasemana = datetime.date.weekday(datetime.datetime.now())    # 0lun 1mar 2mie 3jue 4vie 5sab 6dom
+
+print(hora)
+print(diasemana)

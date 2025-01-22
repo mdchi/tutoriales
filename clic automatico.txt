@@ -1,0 +1,56 @@
+## clic automatico 
+## https://www.youtube.com/watch?v=pHJnmtKW3ac
+## pip install pyautogui  ##instalar libreria desde consola
+
+import pyautogui, time
+time.sleep(3)
+x,y = pyautogui.position()
+print (x,y)
+
+pyautogui.click(1250,4)                           #minimiza la pagina compilador
+time.sleep(5)
+pyautogui.click(622,412)                          ##coordenada del clic en zona para escribir
+pyautogui.write("texto a pegar", interval=0.05)   ##pega texto con delay entre letra
+pyautogui.press("Enter")                          ##oprime enter segunda linea
+pyautogui.write("texto 2 linea", interval=0.05)
+pyautogui.click(300,400)                          ##coordenada boton publicar
+
+
+for i in range(10):                              ## multiples publicaciones
+  hora=datetime.datetime.now()
+  pyautogui.write("hora: " + str(hora.hour) + str(hora.minute) + str(hora.second), interval=0.05)
+  pyautogui.click(300,400)
+  time.sleep(5)
+
+
+#clic automatico 2
+
+import pyautogui, time
+time.sleep(1)
+pyautogui.click(1775,21)        #minimiza python
+pyautogui.click(714,484)
+pyautogui.write("pelota", interval=0.1)
+pyautogui.press("Enter") 
+
+time.sleep(3)
+x,y = pyautogui.position()
+print (x,y)
+
+
+#compra automatica
+
+import pyautogui, time
+time.sleep(1)
+pyautogui.click(1775,21)        #minimiza python
+time.sleep(1)
+i=0
+while i < 100000:
+    pyautogui.click(1295,684)
+    time.sleep(2)
+    i=i+1
+
+
+
+# time.sleep(3)     #obtener posicion cursor
+# x,y = pyautogui.position()
+# print (x,y)
